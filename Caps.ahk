@@ -11,6 +11,7 @@ SetCapsLockState, alwaysoff
 SetScrollLockState, alwaysoff
 SendMode, Event
 
+
 ; win+caps can still turn caps on
 ; turned off because buggy
 ; #CapsLock::CapsLock
@@ -71,30 +72,31 @@ q::NumpadHome
 e::NumpadEnd
 Escape::`
 
-; ALT CHARS
+; Special characters
+; https://www.autohotkey.com/board/topic/20572-passing-special-characters-to-send/
 Tab & Escape::#^Left
-Tab & j::Send {ASC 27} ; ← 
-Tab & l::Send {ASC 26} ; →
-Tab & i::Send {ASC 24} ; ↑
-Tab & k::Send {ASC 25} ; ↓
-Tab & 8::Send {ASC 236} ; ∞
-Tab & f::Send {ASC 159} ; ƒ
-Tab & ,::Send {ASC 243} ; ≤
-Tab & .::Send {ASC 242} ; ≥
-Tab & o::Send {ASC 234} ; Ω
-Tab & '::Send {ASC 248} ; °
-Tab & -::Send {ASC 241} ; ±
-Tab & [::Send {ASC 174} ; «
-Tab & ]::Send {ASC 175} ; »
-Tab & p::Send {ASC 227} ; π
-Tab & b::Send {ASC 225} ; ß
-Tab & a::Send {ASC 224} ; α
-Tab & t::Send {ASC 231} ; τ
-Tab & e::Send {ASC 228} ; Σ
-Tab & m::Send {ASC 0153} ; ™
-Tab & 3::Send {ASC 3} ; ♥
-Tab & d::Send {U+0394} ; Δ
-Tab & =::Send {U+2260} ; ≠
+Tab & j::Send {←} ; ← 
+Tab & l::Send {→} ; →
+Tab & i::Send {↑} ; ↑
+Tab & k::Send {↓} ; ↓
+Tab & 8::Send {∞} ; ∞
+Tab & f::Send {ƒ} ; ƒ
+Tab & ,::Send {≤} ; ≤
+Tab & .::Send {≥} ; ≥
+Tab & o::Send {Ω} ; Ω
+Tab & '::Send {°} ; °
+Tab & -::Send {±} ; ±
+Tab & [::Send {«} ; «
+Tab & ]::Send {»} ; »
+Tab & p::Send {π} ; π
+Tab & b::Send {ß} ; ß
+Tab & a::Send {α} ; α
+Tab & t::Send {τ} ; τ
+Tab & e::Send {Σ} ; Σ
+Tab & m::Send {™} ; ™
+Tab & 3::send {♥} ; ♥
+Tab & d::Send {Δ} ; Δ
+Tab & =::Send {≠} ; ≠
 
 ; f1-f12
 1::F1
