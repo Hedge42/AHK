@@ -12,21 +12,12 @@ SetScrollLockState, alwaysoff
 SendMode, Event
 
 
-; win+caps can still turn caps on
-; turned off because buggy
-; #CapsLock::CapsLock
-
-
-
-; usable as a keybind in games
-; however, keys like WASD will be processed as arrow keys
-; ~CapsLock::SetCapsLockState, Off
-
 *CapsLock::return
+AppsKey::return
 
-;CapsLock Up::
-;    SendKeyUps()
-;    return
+CapsLock Up::
+    SendKeyUps()
+    return
 
 SendKeyUps()
 {
@@ -35,23 +26,19 @@ SendKeyUps()
 	    Key := Format("VK{:02X}",A_Index)
 	    if GetKeyState(Key)
             SendMessage, %key% Up
-		    Send, {%Key% Up}
+		    ;Send, {%Key% Up}
     }
 }
 
-#if GetKeyState("CapsLock", "P")    
+#if GetKeyState("CapsLock", "P") || GetKeyState("AppsKey", "P")   
+
 
 
 r::reload
 
-; mouse clicks
-z Up::Send {MButton Up}
-x Up::Send {RButton Up}
-c Up::Send {LButton Up}
-
-z::Send {MButton Down}
-x::Send {RButton Down}
-c::Send {LButton Down}
+z::LButton
+x::MButton
+c::RButton
 
 ; arrow keys
 w::Up

@@ -5,13 +5,22 @@
 
 ;SetCapsLockState, alwaysoff
 ;SetScrollLockState, alwaysoff
+
+; whitelist programs
+GroupAdd, whitelist, ahk_exe VALORANT-Win64-Shipping.exe
+#IfWinActive, ahk_group whitelist
+
 SendMode, Event
 
-AppsKey::LWin
+AppsKey::RWin ; can still use win key
+CapsLock::8
+LWin::9
+LAlt::0
 
-~CapsLock::Return
-+Tab::Return
+; Space::LButton ; experimental...
+
+; block alt-tab and win-tab
+;+Tab::Return
 !Tab::Return
 #Tab::Return
-LWin::Return
-RWin::Return
+
