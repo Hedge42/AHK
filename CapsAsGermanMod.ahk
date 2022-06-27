@@ -3,14 +3,9 @@
 #Persistent
 #MaxHotkeysPerInterval 1000
 
-; blacklist programs from being used 
-;GroupAdd, blacklist, ahk_exe VALORANT-Win64-Shipping.exe
-;#IfWinNotActive, ahk_group blacklist
-
 SetCapsLockState, alwaysoff
 SetScrollLockState, alwaysoff
 SendMode, Event
-
 
 *CapsLock::return
 AppsKey::return
