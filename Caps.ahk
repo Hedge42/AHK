@@ -59,6 +59,16 @@ q::NumpadHome
 e::NumpadEnd
 Escape::`
 
+; German special characters
+q::ä
++q::Ä
+u::ü
++u::Ü
+o::ö
++o::Ö
+b::ß
++b::ẞ
+
 ; Special characters
 ; https://www.autohotkey.com/board/topic/20572-passing-special-characters-to-send/
 Tab & Escape::#^Left
