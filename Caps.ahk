@@ -55,7 +55,7 @@ k::PGDN
 +-::Send {Asc 0151} ; —
 BackSpace::Delete
 p::PrintScreen
-q::NumpadHome
+h::NumpadHome
 e::NumpadEnd
 Escape::`
 
@@ -86,8 +86,8 @@ Tab & -::Send {±} ; ±
 Tab & [::Send {«} ; «
 Tab & ]::Send {»} ; »
 Tab & p::Send {π} ; π
-Tab & b::Send {ß} ; ß
-Tab & a::Send {α} ; α
+;Tab & b::Send {ß} ; ß
+;Tab & a::Send {α} ; α
 Tab & t::Send {τ} ; τ
 Tab & e::Send {Σ} ; Σ
 Tab & m::Send {™} ; ™
