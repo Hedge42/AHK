@@ -13,6 +13,8 @@ SendMode, Event
 
 
 *CapsLock::return
+
+
 AppsKey::return
 
 CapsLock Up::
@@ -35,7 +37,8 @@ SendKeyUps()
 
 
 r::reload
-
+;r::Msg({reload})
+  
 z::LButton
 x::MButton
 c::RButton
@@ -69,15 +72,28 @@ o::ö
 b::ß
 +b::ẞ
 
+; numpad
+Tab & 0::Numpad0
+Tab & 1::Numpad1
+Tab & 2::Numpad2
+Tab & 3::Numpad3
+Tab & 4::Numpad4
+Tab & 5::Numpad5
+Tab & 6::Numpad6
+Tab & 7::Numpad7
+Tab & 8::Numpad8
+Tab & 9::Numpad9
+
 ; Special characters
+; https://www.w3schools.com/charsets/ref_utf_symbols.asp
 ; https://www.autohotkey.com/board/topic/20572-passing-special-characters-to-send/
 Tab & Escape::#^Left
 Tab & j::Send {←} ; ← 
 Tab & l::Send {→} ; →
 Tab & i::Send {↑} ; ↑
 Tab & k::Send {↓} ; ↓
-Tab & 8::Send {∞} ; ∞
-Tab & f::Send {ƒ} ; ƒ
+;Tab & 8::Send {∞} ; ∞
+Tab & f::Send {☠} ; ƒ
 Tab & ,::Send {≤} ; ≤
 Tab & .::Send {≥} ; ≥
 Tab & o::Send {Ω} ; Ω
@@ -91,9 +107,19 @@ Tab & p::Send {π} ; π
 Tab & t::Send {τ} ; τ
 Tab & e::Send {Σ} ; Σ
 Tab & m::Send {™} ; ™
-Tab & 3::send {♥} ; ♥
-Tab & d::Send {Δ} ; Δ
+Tab & v::send {♥} ; ♥
+Tab & d::Send {Δ} ; Δ☺☺☺    
 Tab & =::Send {≠} ; ≠
+Tab & x::Send {✗}
+Tab & y::Send {✓}
+Tab & s::Send {☹}
+Tab & h::Send {☺}
+Tab & !::Send {⚠}
+Tab & U::Send {☝}
+Tab & g::Send {👍}
+Tab & w::Send {✌}
+;Tab & Enter::Send {🍆}
+Tab & r::Send {✋}
 
 ; f1-f12
 1::F1

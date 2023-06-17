@@ -8,4 +8,5 @@ SetScrollLockState, alwaysoff
 SendMode, Event
 
 x::MouseClick
+c::MouseClick
 Escape::Escape
